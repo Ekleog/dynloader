@@ -4,7 +4,6 @@
  * @version	1.0
  * @date
  * 	Created:	sam. 15 mai 2010 19:11:02 CEST \n
- * 	Last Update:	sam. 15 mai 2010 19:11:02 CEST
  */
 /*------------------------------------------------------------------------
  * Description:	This file provides the interface for managing dynamic libraries

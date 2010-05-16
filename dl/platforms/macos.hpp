@@ -4,7 +4,6 @@
  * @version	1.0
  * @date
  * 	Created:	sam. 15 mai 2010 20:22:14 CEST \n
- * 	Last Update:	sam. 15 mai 2010 20:22:14 CEST
  */
 /*------------------------------------------------------------------------
  * Description:	This file offers a Mac OS option for loading dynamic libraries.
