@@ -16,12 +16,14 @@
 #ifndef _DL_PLATFORMS_WIN___HPP__
 #define _DL_PLATFORMS_WIN___HPP__
 
+#include <boost/noncopyable.hpp>
+
 #include <windows.h>
 
 namespace dl {
 
     /**
-     * @brief The class implementing dynamic library support for Window
+     * @brief The class implementing dynamic library support for Windows
      *
      * <p><b>Semantics</b><br>
      * <li> Entity semantics (=> reference semantics)

@@ -17,7 +17,7 @@
 #ifndef _DL_DYNLIB_HPP__
 #define _DL_DYNLIB_HPP__
 
-#include <boost/exception/all.hpp>
+#include <boost/exception.hpp>
 
 namespace dl {
 
@@ -27,8 +27,8 @@ namespace dl {
 
     struct Exception : virtual boost::exception, virtual std::exception { };
 
-    struct LoadingException : virtual Exception { }
-    struct FreeingException : virtual Exception { }
+    struct LoadingException : virtual Exception { };
+    struct FreeingException : virtual Exception { };
 
     struct LoadingLibException : virtual LoadingException { };
     struct FreeingLibException : virtual FreeingException { };
@@ -38,14 +38,10 @@ namespace dl {
 
 #include <boost/config.hpp>
 
-#if BOOST_PLATFORM == "Win32"
+#if defined(BOOST_WINDOWS) && BOOST_WINDOWS == 1
 #  include "platforms/win32.hpp"
-#elif BOOST_PLATFORM == "linux"
-#  include "platforms/linux.hpp"
-#elif BOOST_PLATFORM == "Mac OS"
-#  include "platforms/macos.hpp"
 #else
-#  error "Unknown platform"
+#  include "platforms/posix.hpp"
 #endif
 
 #endif // _DL_DYNLIB_HPP__
