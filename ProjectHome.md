@@ -1,0 +1,1 @@
+This project's intent is to offer a portable solution for loading dynamic libraries.
